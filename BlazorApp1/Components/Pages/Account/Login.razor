@@ -1,6 +1,6 @@
 ﻿@using BlazorApp1.Models.ViewModels
 
-<div class="row">
+@* <div class="row">
     <div class="col-lg-4 offset-lg-4 pt-4 pb-4 border">
         <EditForm Model="@Model" OnInvalidSubmit="Authenticate" FormName="LoginForm">
             <DataAnnotationsValidator />
@@ -27,15 +27,17 @@
             </div>
         </EditForm>
     </div>
-</div>
+</div> *@
 
 @code {
     [SupplyParameterFromForm]
     public LoginViewModel Model { get; set; } = new();
 
-    private async Task Authenticate()
-    {
-        
-    }
+  
 
 }
+
+    @*               private async Task Authenticate()
+    {
+
+    } *@
